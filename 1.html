@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			width: 200px;
+		}
+		#xuiHui{
+			font-size: 50px;
+			color:rgb(255, 11, 182);
+			position: absolute;
+			right: 50px;
+			top: 50px;
+			background-color: rgb(251, 255, 15);
+		}
+		table{
+			float: right;
+			margin: 70px;
+			margin-right: 120px;
+			font-size: 30px;
+		}
+		.square{
+			border: 5px solid rgb(255, 11, 182);
+			width: 200px;
+			height: 200px;
+		}
+		.words{
+			color:rgb(47, 77, 247);
+			font-size: 80px;
+			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		select{
+			border: 0px solid #000;
+			color: red;
+			font-size: 80px;
+			text-align: center;
+			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			text-align: right;
+			-o-appearance: none;
+   			-ms-appearance: none;
+ 		 	 -webkit-appearance: none;
+ 			  -moz-appearance: none;
+ 			  appearance: none;
+		}
+		.hit{
+			background: url(cuo.jfif) no-repeat;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			margin-left: 300px;
+			z-index: 999999999999999999;
+		}	
+		.maDaoChengGong{
+			background: url(chengGong.jfif) no-repeat;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			margin-left: 100px;
+			z-index: 999999999999999999;
+		}
+		.cuo2{
+			background: url(cuo2.png) no-repeat;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			margin-left: 300px;
+			z-index: 999999999999999999;
+		}
+		.dropzone{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" id="hitHit"></a>
+	<table>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> к<select class="kurica" name="">
+		
+				<option value="0">?
+				<option value="а">а
+				<option value="б">б
+				<option value="в">в
+				<option value="г">г
+				<option value="д">д
+				<option value="е">е
+				<option value="ё">ё
+				<option value="ж">ж
+				<option value="з">з
+				<option value="и">и
+				<option value="й">й
+				<option value="к">к
+				<option value="л">л
+				<option value="м">м
+				<option value="н">н
+				<option value="о">о
+				<option value="п">п
+				<option value="р">р
+				<option value="с">с
+				<option value="т">т
+				<option value="у">у
+				<option value="ф">ф
+				<option value="х">х
+				<option value="ц">ц
+				<option value="ч">ч
+				<option value="ш">ш
+				<option value="щ">щ
+				<option value="ъ">ъ
+				<option value="ы">ы
+				<option value="ь">ь
+				<option value="э">э
+				<option value="ю">ю
+				<option value="я">я
+				
+			</select> р и ц а</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="аaaaa"> я<select class="kurica" name="">
+		
+			<option value="0">?
+				<option value="а">а
+				<option value="б">б
+				<option value="в">в
+				<option value="г">г
+				<option value="д">д
+				<option value="е">е
+				<option value="ё">ё
+				<option value="ж">ж
+				<option value="з">з
+				<option value="и">и
+				<option value="й">й
+				<option value="к">к
+				<option value="л">л
+				<option value="м">м
+				<option value="н">н
+				<option value="о">о
+				<option value="п">п
+				<option value="р">р
+				<option value="с">с
+				<option value="т">т
+				<option value="у">у
+				<option value="ф">ф
+				<option value="х">х
+				<option value="ц">ц
+				<option value="ч">ч
+				<option value="ш">ш
+				<option value="щ">щ
+				<option value="ъ">ъ
+				<option value="ы">ы
+				<option value="ь">ь
+				<option value="э">э
+				<option value="ю">ю
+				<option value="я">я
+			
+		</select>  ц а</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words">к о л<select class="kurica" name="">
+		
+			<option value="0">?
+				<option value="а">а
+				<option value="б">б
+				<option value="в">в
+				<option value="г">г
+				<option value="д">д
+				<option value="е">е
+				<option value="ё">ё
+				<option value="ж">ж
+				<option value="з">з
+				<option value="и">и
+				<option value="й">й
+				<option value="к">к
+				<option value="л">л
+				<option value="м">м
+				<option value="н">н
+				<option value="о">о
+				<option value="п">п
+				<option value="р">р
+				<option value="с">с
+				<option value="т">т
+				<option value="у">у
+				<option value="ф">ф
+				<option value="х">х
+				<option value="ц">ц
+				<option value="ч">ч
+				<option value="ш">ш
+				<option value="щ">щ
+				<option value="ъ">ъ
+				<option value="ы">ы
+				<option value="ь">ь
+				<option value="э">э
+				<option value="ю">ю
+				<option value="я">я
+			
+		</select></td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words"><select class="kurica" name="">
+		
+			<option value="0">?
+				<option value="а">а
+				<option value="б">б
+				<option value="в">в
+				<option value="г">г
+				<option value="д">д
+				<option value="е">е
+				<option value="ё">ё
+				<option value="ж">ж
+				<option value="з">з
+				<option value="и">и
+				<option value="й">й
+				<option value="к">к
+				<option value="л">л
+				<option value="м">м
+				<option value="н">н
+				<option value="о">о
+				<option value="п">п
+				<option value="р">р
+				<option value="с">с
+				<option value="т">т
+				<option value="у">у
+				<option value="ф">ф
+				<option value="х">х
+				<option value="ц">ц
+				<option value="ч">ч
+				<option value="ш">ш
+				<option value="щ">щ
+				<option value="ъ">ъ
+				<option value="ы">ы
+				<option value="ь">ь
+				<option value="э">э
+				<option value="ю">ю
+				<option value="я">я
+			
+		</select> ы р</td></tr>
+
+
+
+
+
+
+
+
+
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> ф р<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> к т ы</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> в о щ и</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> я с о</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> р<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> б а</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> т о<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> т</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> м ё<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select></td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select>околад</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> ч<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> й</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> к<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> ф е</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> о д а</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> м о<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> о к о</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> о к</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> с<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> п</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> <select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> и с</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> к<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select>ртошка</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> х л<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select> б</td></tr>
+		<tr><td class="square" class="dropzone"></td><td class="words" value="ё"> пел<select class="kurica" name="">
+		
+			<option value="0">?
+			<option value="а">а
+			<option value="б">б
+			<option value="в">в
+			<option value="г">г
+			<option value="д">д
+			<option value="е">е
+			<option value="ё">ё
+			<option value="ж">ж
+			<option value="з">з
+			<option value="и">и
+			<option value="й">й
+			<option value="к">к
+			<option value="л">л
+			<option value="м">м
+			<option value="н">н
+			<option value="о">о
+			<option value="п">п
+			<option value="р">р
+			<option value="с">с
+			<option value="т">т
+			<option value="у">у
+			<option value="ф">ф
+			<option value="х">х
+			<option value="ц">ц
+			<option value="ч">ч
+			<option value="ш">ш
+			<option value="щ">щ
+			<option value="ъ">ъ
+			<option value="ы">ы
+			<option value="ь">ь
+			<option value="э">э
+			<option value="ю">ю
+			<option value="я">я
+			
+		</select>мени</td></tr>
+		
+
+	</table>
+	<img id="yo3" class="dropzone" src="cola.jpeg" alt="">
+	<img id="yo8" class="dropzone" src="yo8.jpg" alt="">
+	<img id="yo1" class="dropzone" src="chicken.png" alt="">
+	<img id="yo20" class="dropzone" src="yo20.jpeg" alt="">
+	<img id="yo21" class="dropzone" src="yo21.jpg" alt="">
+	<img id="yo4" class="dropzone" src="cheese13.png" alt="">
+	<img id="yo5" class="dropzone" src="yo5.jfif" alt="">
+	
+	<img id="yo14" class="dropzone" src="yo14.jpg" alt="">
+	<img id="yo2" class="dropzone" src="eggs.jpg" alt="">
+	<img id="yo15" class="dropzone" src="yo15.jpg" alt="">
+	<img id="yo16" class="dropzone" src="yo16.jpg" alt="">
+	<img id="yo17" class="dropzone" src="yo17.jfif" alt="">
+
+	<img id="yo6" class="dropzone" src="yo6.jpg" alt="">
+	<img id="yo7" class="dropzone" src="yo7.jpg" alt="">
+	<img id="yo9" class="dropzone" src="yo9.jfif" alt="">
+	<img id="yo10" class="dropzone" src="yo10.jpg" alt="">
+	<img id="yo11" class="dropzone" src="yo11.jfif" alt="">
+	<img id="yo12" class="dropzone" src="yo12.jpeg" alt="">
+	<img id="yo13" class="dropzone" src="yo13.jpg" alt="">
+	<img id="yo19" class="dropzone" src="yo19.jpg" alt="">
+	<img id="yo18" class="dropzone" src="yo18.png" alt="">
+	
+	
+	
+	<button id="xuiHui">提交</button>
+</body>
+
+<script>
+	
+
+	var placeOfPic_GetBoundingClientRect = [];
+	var nameThemAll = [];
+	console.log(nameThemAll);
+		let onyx =  document.getElementsByClassName("dropzone");
+		for(let i=0; i<onyx.length; i++){
+			let pictureThis = onyx[i];
+			
+	
+	
+			pictureThis.onmousedown = function(event){ // событие запускается, когда пользователь кликает по элементу
+			let shiftX = event.clientX - pictureThis.getBoundingClientRect().left;
+			  let shiftY = event.clientY - pictureThis.getBoundingClientRect().top;
+			pictureThis.style.position = 'absolute';
+			pictureThis.style.zIndex = 1000;
+			  document.body.append(pictureThis);
+					moveAt(event.pageX, event.pageY);
+			function moveAt(pageX, pageY) {
+					pictureThis.style.left = pageX - shiftX + 'px';
+					pictureThis.style.top = pageY - shiftY + 'px';
+				   }
+			function onMouseMove(event) {
+					moveAt(event.pageX, event.pageY);
+				 }
+	document.addEventListener('mousemove', onMouseMove);
+	  pictureThis.onmouseup = function() {   // onmouseup  запускается, когда курсор мышки на элементе отпускается
+		console.log(pictureThis.getBoundingClientRect());
+		nameThemAll.push(pictureThis.id);
+		
+		
+
+		
+		console.log(document.documentElement.scrollHeight); // показывает высоту всей страницы
+		console.log(window.pageYOffset); //Получение текущей прокрутки!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		var tekushaProkrutka = window.pageYOffset;
+		console.log(tekushaProkrutka);
+		console.log((pictureThis.getBoundingClientRect().top) + tekushaProkrutka); // Текущая прокрутка + высота элемента до верхней границы окна
+
+		placeOfPic_GetBoundingClientRect.push((pictureThis.getBoundingClientRect().top) + tekushaProkrutka);
+		
+		document.removeEventListener('mousemove', onMouseMove);
+		pictureThis.onmouseup = null;
+	  };
+	};
+	pictureThis.ondragstart = function() {   // Ondragstart - запускается когда пользователь начинает перетаскивать элемент
+	   return false;  // Поэтому нам её надо отключить, чтобы наша картинка отпускалась от мышки после перетаскивания
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		function obrabotchik(){
+			var result = document.getElementsByTagName("select");
+			var spisok = [];
+			for(var i =0; i<result.length; i++){
+				spisok.push(result[i].value);
+			}
+			console.log(spisok);
+			if(spisok[0] == "у" && spisok[1] == "й" && spisok[2] == "а" && spisok[3] == "с" && spisok[4] == "у" && spisok[5] == "о" && spisok[6] == "м" && spisok[7] == "ы" && spisok[8] == "р" && spisok[9] == "д" && spisok[10] == "ш" && spisok[11] == "а" && spisok[12] == "о" && spisok[13] == "в" && spisok[14] == "л" && spisok[15] == "с" && spisok[16] == "у" && spisok[17] == "р" && spisok[18] == "а" && spisok[19] == "е" && spisok[20] == "ь"){
+				console.log("GUT");
+				var reverseName = nameThemAll.reverse();
+				var reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+				var ein = reverseName.indexOf("yo1");
+				var zwei = reverseName.indexOf("yo2");
+				var drei = reverseName.indexOf("yo3");
+				var vier = reverseName.indexOf("yo4");
+				var five = reverseName.indexOf("yo5");
+				var six = reverseName.indexOf("yo6");
+				var seven = reverseName.indexOf("yo7");
+				var eight = reverseName.indexOf("yo8");
+				var nine = reverseName.indexOf("yo9");
+				var ten = reverseName.indexOf("yo10");
+				var eleven = reverseName.indexOf("yo11");
+				var twelve = reverseName.indexOf("yo12");
+				var thirteen = reverseName.indexOf("yo13");
+				var fourteen = reverseName.indexOf("yo14");
+				var fifteen = reverseName.indexOf("yo15");
+				var sixteen = reverseName.indexOf("yo16");
+				var seventeen = reverseName.indexOf("yo17");
+				var eightteen = reverseName.indexOf("yo18");
+				var nineteen = reverseName.indexOf("yo19");
+				var twenty = reverseName.indexOf("yo20");
+				var twentyOne = reverseName.indexOf("yo21");
+				console.log(ein);
+				console.log(zwei);
+				console.log(drei);
+				console.log(vier);
+				console.log(reverseName);
+				console.log(reversePlace);
+				// console.log(reversePlace[ein]);
+				// console.log(reversePlace[zwei]);
+				// console.log(reversePlace[drei]);
+				// console.log(reversePlace[vier]);
+				
+			
+					if(reversePlace[ein]>165 || reversePlace[ein]<0 || reversePlace[ein] == undefined){
+						console.log("Wrong picture");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[zwei]<165 || reversePlace[zwei]>350 || reversePlace[zwei] == undefined){
+						console.log("Wrong picture2222");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[drei]<400 || reversePlace[drei]>550 || reversePlace[drei] == undefined){
+						console.log("Wrong picture3333");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[vier]<600 || reversePlace[vier]>770 || reversePlace[vier] == undefined){
+						console.log("Wrong picture3333");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[five]<928 || reversePlace[five]>955 || reversePlace[five] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[six]<1141 || reversePlace[six]>1168 || reversePlace[six] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[seven]<1357 || reversePlace[seven]>1382 || reversePlace[seven] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[eight]<1571 || reversePlace[eight]>1596 || reversePlace[eight] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[nine]<1784 || reversePlace[nine]>1810 || reversePlace[nine] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[ten]<1997 || reversePlace[ten]>2025 || reversePlace[ten] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[eleven]<2210 || reversePlace[eleven]>2240 || reversePlace[eleven] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[twelve]<2425 || reversePlace[twelve]>2454 || reversePlace[twelve] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[thirteen]<2640 || reversePlace[thirteen]>2668 || reversePlace[thirteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[fourteen]<2855 || reversePlace[fourteen]>2881 || reversePlace[fourteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[fifteen]<3068 || reversePlace[fifteen]>3094 || reversePlace[fifteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[sixteen]<3280 || reversePlace[sixteen]>3310 || reversePlace[sixteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[seventeen]<3497 || reversePlace[seventeen]>3523 || reversePlace[seventeen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[eightteen]<3710 || reversePlace[eightteen]>3736 || reversePlace[eightteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[nineteen]<3921 || reversePlace[nineteen]>3951 || reversePlace[nineteen] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[twenty]<4138 || reversePlace[twenty]>4166 || reversePlace[twenty] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}else if(reversePlace[twentyOne]<4351 || reversePlace[twentyOne]>4373 || reversePlace[twentyOne] == undefined){
+						console.log("Wrong picture!");
+						reverseName = nameThemAll.reverse();
+					reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+					var wrongPic = document.getElementById("hitHit");
+					function cuoPic2(){
+						wrongPic.setAttribute("class", "cuo2");
+					}
+					cuoPic2();
+					wrongPic.onclick = shitOnUs;
+					function shitOnUs(){
+						wrongPic.removeAttribute("class", "cuo2");
+					}
+					}
+					else{
+						console.log("CORRECT everything!!!");
+						reverseName = nameThemAll.reverse();
+						reversePlace = placeOfPic_GetBoundingClientRect.reverse();
+						var allRight = document.getElementById("hitHit");
+						function rightShow(){
+							allRight.setAttribute("class", "maDaoChengGong");
+						}
+						rightShow();
+						allRight.onclick = shitOnHim;
+						function shitOnHim(){
+							allRight.removeAttribute("class", "maDaoChengGong");
+						}
+					}	
+
+				}else{
+					var cuo = document.getElementById("hitHit");
+					function display(){
+					cuo.setAttribute("class", "hit");
+				}
+				display();	
+				cuo.onclick = shitOnYou;
+				function shitOnYou(){
+					cuo.removeAttribute("class", "hit");
+				}
+				
+			}
+		}	
+		var batman = document.getElementById("xuiHui");
+		batman.addEventListener("click", function(){
+			window.onload = obrabotchik();
+		});
+		// 	for(var i=0; i<guess.length; i++){
+		// 	var alphabet=["?", "а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "eggs", "к", "л", "м", "н", "о", "п", "р", "с", "т", "chicken", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я"];
+		// 	var best = guess[i];
+		// 	if(best.value == "chicken"){
+		// 		var newMassive = 0;
+		// 		newMassive = newMassive + 1;
+		// 	}else if(best.value == "eggs"){
+		// 		var newMassive = 0;
+		// 		newMassive = newMassive + 1;
+		// 	}else{
+		// 		newMassive = newMassive + 0;
+		// 	}
+		// }
+		// if(newMassive == 2){
+		// 		alert("right " + newMassive);
+		// 		}else{
+		// 			alert("puk " + newMassive);
+		// 		}
+	
+	
+	</script>
+
+</html>
+
+
